@@ -17,7 +17,6 @@ function AppContent() {
     setUserToEdit(null); // Clear the user after update
     navigate('/'); // Navigate back to the user list
   };
-
   return (
     <div>
       <Routes>
