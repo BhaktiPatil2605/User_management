@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background-color: #121212;
+  /* background: url('{{ asset("images/form-image.jpg") }}') no-repeat center center / cover; */
+  background-size: 100% 100%;
+}
+
+/* Main Content Styling */
+.main-content {
+  /* margin-left: 250px; */
+  padding: 50px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+
+}
+
+.main-content h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #666;
+}
+.container {
+  max-width: 800px;
+  background: #2c2c2e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 3px;
+  color: #d4d4d4;
+}
+
+
+/* Input Field Styling */
+/* Input Field Styling */
+input[type="text"],
+input[type="date"]{
+  background-color: #3a3a3c;
+  color: #f5f5f5;
+  border: 1px solid #4b4b4d;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder Styling */
+input[type="text"]::placeholder,
+input[type="date"]::placeholder{
+  color: #b0b0b0;
+}
+
+/* Focus Effect */
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: #29292b;
+  color: #fff;
+}
+
+/* Hover Effect */
+input[type="text"]:hover,
+input[type="date"]:hover{
+  border-color: #ffffff;
+}
+
+.table th {
+  background-color: #1f1f22 !important;
+  /* Darker background for header */
+  color: #fff !important;
+}
+
+.table td {
+  background-color: #333 !important;
+  color: #d4d4d4 !important;
+}
+
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 10px;
+}
+
+.error-message{
+  color: red;
+}
+
