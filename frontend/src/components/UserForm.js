@@ -54,7 +54,7 @@ function UserForm({ userToEdit, onUserUpdated }) {
                 setErrors({}); // Clear errors
                 setUser({ name: '', dob: '', email: '', password: '' }); // Reset form
                 onUserUpdated(); // once update call this user to make the state null this is define in app.js
-            } else if (response.message == 'error') {
+            } else if (response.message === 'error') {
                 // const data = await response.json();
                 setErrors(response.errors || {}); // Set validation errors
             } else {
