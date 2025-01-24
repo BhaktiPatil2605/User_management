@@ -32,5 +32,5 @@ This project is a **User Management System** consisting of a **RESTful API** dev
 
 Check out the demo video:
 
-![Demo Video](https://github.com/BhaktiPatil2605/User_management/blob/main/media/React%20App%20and%2010%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202025-01-24%2016-42-16.mp4)
+![Demo Video](https://github.com/BhaktiPatil2605/User_management/blob/main/media/user_demo.mp4)
 
