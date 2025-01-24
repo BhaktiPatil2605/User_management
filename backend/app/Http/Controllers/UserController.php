@@ -22,32 +22,32 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    // public function store(Request $request)
-    // {
-    //     $validator = Validator::make($request->all(), [
-    //         'name' => 'required|string|max:255',
-    //         'email' => 'required|string|email',
-    //         'password' => 'required|string|min:8',
-    //         'dob' => 'required|date|before:18 years ago|after:100 years ago',
-    //     ]);
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email',
+            'password' => 'required|string|min:8',
+            'dob' => 'required|date|before:18 years ago|after:100 years ago',
+        ]);
 
-    //     if ($validator->fails()) {
-    //         return response()->json([
-    //             'errors' => $validator->errors(),
-    //             'message'=>"error",
-    //         ]);
-    //     }
-    //     User::create([
-    //         'name' => $request->name,
-    //         'email' => $request->email,
-    //         'password' => Hash::make($request->password),
-    //         'dob' => $request->dob,
-    //     ]);
-    //     return response()->json([
-    //         'message' => 'User successfully created!',
-    //         'success'=> true,
-    //     ]);
-    // }
+        if ($validator->fails()) {
+            return response()->json([
+                'errors' => $validator->errors(),
+                'message'=>"error",
+            ]);
+        }
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'dob' => $request->dob,
+        ]);
+        return response()->json([
+            'message' => 'User successfully created!',
+            'success'=> true,
+        ]);
+    }
 
     /**
      * Display the specified resource.
