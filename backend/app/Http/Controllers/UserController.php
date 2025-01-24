@@ -90,9 +90,9 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    // public function destroy(string $id)
-    // {
-    //     $res = User::where('id', $id)->delete();
-    //     return response()->json($res);
-    // }
+    public function destroy(string $id)
+    {
+        $res = User::where('id', $id)->delete();
+        return response()->json($res);
+    }
 }
