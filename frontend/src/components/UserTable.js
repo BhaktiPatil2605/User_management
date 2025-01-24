@@ -16,7 +16,6 @@ function UserTable({ onEdit }) { //when click on edit it set the value of the st
     }, []);
 
     // console.log(users);
-
     const navigate = useNavigate();
 
     const handleClick = () => {
